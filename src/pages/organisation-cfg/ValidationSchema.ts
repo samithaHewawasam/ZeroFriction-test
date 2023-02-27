@@ -13,7 +13,7 @@ export default yup
     contactDetails: yup.object({
       emailAddress: yup
         .string()
-        .email("Email is not valid")
+        .email("Email is not validated")
         .required("Email is required"),
       telephone: yup
         .string()

@@ -1,6 +1,6 @@
 import * as Components from "antd";
 import React from "react";
-import type IFormField from "./IFormField";
+import type IFormField from "../IFormField";
 import { Controller, useController, useFormContext } from "react-hook-form";
 
 interface ISelect extends IFormField {

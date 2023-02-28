@@ -12,7 +12,7 @@ export {
   Alert,
 } from "antd";
 
-export { default as INPUT } from "./Input";
-export { default as SELECT } from "./Select";
-export { default as TEXTAREA } from "./TextArea";
-export { default as SWITCH } from "./Switch";
+export * from "./Input";
+export * from "./Select";
+export * from "./TextArea";
+export * from "./Switch";

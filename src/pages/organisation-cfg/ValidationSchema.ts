@@ -5,7 +5,10 @@ export default yup
     migrationMode: yup.boolean().required("Migration Mode is required"),
     code: yup.string().required("Code is required"),
     description: yup.string().required("Description is required"),
-    bankAccount: yup.string().required("Bank Account number is required"),
+    bankAccount: yup
+      .string()
+      .required("Bank Account number is required")
+      .max(20, "Bank Account number should not exceed 20 chars"),
     vatAccountNumber: yup.string().required("VAT Account Number is required"),
     companyAccountNumber: yup
       .string()
@@ -32,6 +35,7 @@ export default yup
       streetNumber: yup
         .number()
         .required("Street Number is required")
+        .max(10, "Street Number  should not exceed 10 chars")
         .typeError("Street Number must be a number"),
       postalCode: yup
         .number()

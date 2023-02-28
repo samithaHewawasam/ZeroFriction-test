@@ -4,16 +4,20 @@ import AddressCard from "./cards/AddressCard";
 import ContactDetailsCard from "./cards/ContactDetailsCard";
 import OrganizationDetailsCard from "./cards/OrganizationDetailsCard";
 
+/**
+ * @description Responsive Columns
+ * @returns Body
+ */
 const ConfigBody = () => {
   return (
-    <Row gutter={16}>
-      <Col span={8}>
+    <Row gutter={[16, 16]}>
+      <Col xs={24} xl={8}>
         <OrganizationDetailsCard />
       </Col>
-      <Col span={8}>
+      <Col xs={24} xl={8}>
         <AddressCard />
       </Col>
-      <Col span={8}>
+      <Col xs={24} xl={8}>
         <ContactDetailsCard />
       </Col>
     </Row>
